@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+ <h1><b>All about the iFhone 8</b></h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'What is the iFhone 8?')">What is the iFhone 8?</button>
+  <button class="tablinks" onclick="openCity(event, 'The price')">The price</button>
+  <button class="tablinks" onclick="openCity(event, 'Facts')">Facts</button>
+</div>
+
+<div id="What is the iFhone 8?" class="tabcontent">
+  <h3>The iFhone 8? </h3>
+  <img src="http://cdn3.ipadizate.es/2016/10/iFhone-8-fake-2.jpg">
+  <p> The all new, and sadly better iFhone than the iPhone 7, we all know that  </p>
+  <p> the iPhone 7 was just sad, so what better way to solve the </p>
+  <p>problem than by making a new phone for everyone to spend all their money on.(again)</p>
+  
+</div>
+
+<div id="The price" class="tabcontent">
+  <h3>The best part is that the iFhone 8 practically free!!!</h3>
+  <p> That's right the new iFhone8 is priced at only $1!!!</p>
+  <p> <p> Well..like the iFhone 7 the iFhone 8 doesn't have a headphone jack so..</p>
+            <p> You will need to buy the wireless earbuds which are only $169.99</p>
+            <button type="button" onclick="lol()">Price </button>
+            <p>You will also to buy the 3 chargers that come with the phone they are only $69.99....each</p>
+            <button type="button" onclick="hi()">Price </button>
+            <p>Oh yeah, and these charger don't plug into the wall anymore you need to buy our 3 new Macbooks to charge your phone....$6,969.99</p>
+            <button type="button" onclick="lel()">Price </button>
+            <p>Since the iFhone 8 is so sophiscated, we took off the flashlight, so you need to buy the iLight which is $696.99</p>
+            <button type="button" onclick="heh()">Price </button>
+            <p> To make typing easier we added an external keyboard, so your phone doesn't have a keyboard anymore...</p>
+            <button type="button" onclick="uhh()">Price </button>
+            <p>The iFhone doesnt come with the premium color of every app, which is $60.99 per app</p>
+            <button type="button" onclick="wel()">Price </button>
+            <p>Also if you want any cell reception of any kind you will need to buy the iCellPhoneTower mini which is only $67,676,766.99+</p>
+            <button type="button" onclick="umm()">Price </button>
+            <p>We also took Siri and made her external, so you need to buy a person as well..</p>
+            <button type="button" onclick="yay()">Price </button>
+            <p>Total Price:<span></span></p> 
+</div>
+
+<div id="Facts" class="tabcontent">
+  <h3>Facts</h3>
+  <p>Some amazing features of the iFhone  is that instead of having 2 cameras, it has four, allowing you to have 4 of the same picture. </p>
+  <img src= "http://editorial.designtaxi.com/editorial-images/news-ifhone8commercial031016/4.png">
+  <p>Due to complaints that the iFhone 7 didn't have enough colors we have also added many all new colors, matte black, shiny matte black, dark black, silver black, gold black, and even rose black, why black? Well, becuase why not. </p>
+  <img src= "http://elpais.com/elpais/imagenes/2016/10/05/videos/1475662197_468852_1475662767_noticia_fotograma.jpg">
+</div>
+<script>
+var ans;
+function lol() {
+   ans="$170.99";
+    $("span").html(ans);
+}
+function hi() {
+    ans="$380.96";
+    $("span").html(ans);
+}
+function lel() {
+    ans="$21,290.93";
+    $("span").html(ans);
+}
+function heh() {
+    ans="$21,987.92";
+    $("span").html(ans);
+}
+function uhh(){
+    ans="$23,684.91";
+    $("span").html(ans);
+}
+function wel(){
+    ans="$23,989.863";
+    $("span").html(ans);
+}
+function umm(){
+    ans="$67,700,756.80";
+    $("span").html(ans);
+}
+function yay(){
+    ans="$67,700,756.80+ (depending)";
+    $("span").html(ans);
+}
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html> 
